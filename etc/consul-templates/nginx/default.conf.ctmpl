@@ -1,5 +1,5 @@
 server {
-  listen 80;
+  listen {{ env "NGINX_HTTP_PORT" }};
   server_name 192.168.99.100 localhost;
 
   root /usr/share/nginx/html/;
