@@ -1,6 +1,10 @@
 version: '2'
 services:
-    check:
+    good:
         image: qnib/httpcheck:good-20s
         ports:
-            - 80:80
+            - 8080:8080
+    fail:
+        image: qnib/httpcheck:fail-10s
+        ports:
+            - 8081:8080
