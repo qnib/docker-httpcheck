@@ -1,5 +1,8 @@
 FROM qnib/alpn-nginx
 
+ENV NGINX_HTTP_PORT=8080
+EXPOSE 8080
+
 ADD etc/supervisord.d/check-update.ini /etc/supervisord.d/
 ADD opt/qnib/check-update/bin/start.sh /opt/qnib/check-update/bin/
 ADD etc/consul-templates/nginx/default.conf.ctmpl /etc/consul-templates/nginx/
