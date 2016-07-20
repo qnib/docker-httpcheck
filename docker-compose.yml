@@ -1,0 +1,6 @@
+version: '2'
+services:
+    check:
+        image: qnib/httpcheck:good-20s
+        ports:
+            - 80:80
