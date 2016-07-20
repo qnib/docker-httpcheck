@@ -1,0 +1,29 @@
+{
+  "Services": {
+    "fail": {
+      "Image": "qnib/httpcheck@sha256:b2a384d8b4b60a8bc62651ff1a24559f7461e08ccc5fa6cb99066e3d5c6c3226", 
+      "Networks": [
+        "default"
+      ], 
+      "Ports": [
+        {
+          "Port": 8080, 
+          "Protocol": "tcp"
+        }
+      ]
+    }, 
+    "good": {
+      "Image": "qnib/httpcheck@sha256:cec58c38c6fd94b558bd9f6485e3593967de6a3834232efaee5004f0f65cf51c", 
+      "Networks": [
+        "default"
+      ], 
+      "Ports": [
+        {
+          "Port": 8080, 
+          "Protocol": "tcp"
+        }
+      ]
+    }
+  }, 
+  "Version": "0.1"
+}
