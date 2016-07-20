@@ -2,9 +2,13 @@ version: '2'
 services:
     good:
         image: qnib/httpcheck:good-20s
+        hostname: good
+        container_name: good
         ports:
             - 8080:8080
     fail:
         image: qnib/httpcheck:fail-10s
+        hostname: fail
+        container_name: fail
         ports:
             - 8081:8080
